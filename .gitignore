@@ -1,0 +1,3 @@
+/node_modules/*
+/dirty/*
+/config.json
