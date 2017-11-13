@@ -10,6 +10,6 @@ The pipeline functions as following:
 3. Depending on the criteria selected in step one, run one of the analyzers (ejsFilesAnalyzer.js, jadeFilesAnalyzer.js, or angularFilesAnalyzer.js).
 
 Note:
-* angularFilesAnalyzer.js uses ESLint CLIEngine with an additional rule.
-* ejsFilesAnalyzer.js uses a custom ejsParser.js which calls the modified [EJS Core engine](https://github.com/mde/ejs) to perform the analysis.
-* jadeFilesAnalyzer.js uses a custom pugParser.js which is built on top of the modified [pug-lexer](https://github.com/pugjs/pug-lexer).
+* angularFilesAnalyzer.js uses ESLint CLIEngine with an additional rule. The rule is in updates/eslint/lib/rules/angular_trustAs.js
+* ejsFilesAnalyzer.js uses a custom ejsParser.js which calls the modified [EJS Core engine](https://github.com/mde/ejs) to perform the analysis. The modifications are in updates/ejs/lib/ejs.js
+* jadeFilesAnalyzer.js uses a custom pugParser.js which is built on top of the modified [pug-lexer](https://github.com/pugjs/pug-lexer). The modifications are in updates/pug-lexer/index.js
